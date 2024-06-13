@@ -6,6 +6,10 @@ import { useAction } from "next-safe-action/hooks";
 import "../../../styles/globals.css";
 import "../../../styles/tailwind.css";
 
+export function generateStaticParams() {
+  return ["en"].map((locale) => ({ locale }));
+}
+
 export default function RootLayout({
   children,
   params,
