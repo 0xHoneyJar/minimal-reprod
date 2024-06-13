@@ -8,5 +8,7 @@ export const createUserSchema = z.object({
 });
 
 export const createUserAction = action(createUserSchema, async ({ name }) => {
+  console.log("createUserAction", name);
+
   return 0;
 });
