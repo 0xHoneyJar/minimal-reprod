@@ -1,8 +1,4 @@
-import { unstable_setRequestLocale } from "next-intl/server";
-
 export default function Home({ params }: { params: { locale: string } }) {
-  unstable_setRequestLocale(params.locale);
-
   return (
     <div>
       <div className="relative z-10 flex h-screen w-full items-center justify-center">
