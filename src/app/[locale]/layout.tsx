@@ -3,8 +3,8 @@
 
 import { createUserAction } from "@/actions/create-user";
 import { useAction } from "next-safe-action/hooks";
-import "../styles/globals.css";
-import "../styles/tailwind.css";
+import "../../../styles/globals.css";
+import "../../../styles/tailwind.css";
 
 export default function RootLayout({
   children,
