@@ -1,14 +1,12 @@
-"use client";
-
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 
-export default function Home({ params }: { params: { locale: string } }) {
+export default function TabPage() {
   return (
     <div>
       <ConnectButton />
-      <Link href="/tab" className="text-blue-500">
-        Tab
+      <Link href="/" className="text-blue-500">
+        Home
       </Link>
     </div>
   );

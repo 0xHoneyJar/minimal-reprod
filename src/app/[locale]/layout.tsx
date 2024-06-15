@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-head-element */
 
+import Wrapper from "@/components/wrapper";
+import "@rainbow-me/rainbowkit/styles.css";
 import { unstable_setRequestLocale } from "next-intl/server";
 import "../../../styles/globals.css";
 import "../../../styles/tailwind.css";
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html>
       <head></head>
-      <body>{children}</body>
+      <body>
+        <Wrapper>{children}</Wrapper>
+      </body>
     </html>
   );
 }
