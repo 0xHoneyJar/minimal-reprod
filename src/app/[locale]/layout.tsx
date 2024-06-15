@@ -23,7 +23,8 @@ export default function RootLayout({
     <html>
       <head></head>
       <body>
-        <Wrapper>{children}</Wrapper>
+        <Wrapper>
+          {children}</Wrapper>
       </body>
     </html>
   );

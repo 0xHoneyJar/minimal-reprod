@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  ConnectButton,
   connectorsForWallets,
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
@@ -45,7 +46,13 @@ const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <WagmiProvider reconnectOnMount config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>{children}</RainbowKitProvider>
+        <RainbowKitProvider>
+          <div className="h-8 w-full bg-white">
+            <p>Navbar button</p>
+            <ConnectButton />
+          </div>
+          {children}
+        </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
   );
